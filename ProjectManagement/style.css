@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  
+  header {
+    background: #346f8f;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background: #ff8c00a7;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .btn {
+    background: #fff;
+    color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .car-list {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .car {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .booking-form {
+    padding: 2rem;
+    background: #e9ecef;
+  }
+  
+  .booking-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .booking-form label {
+    margin-top: 1rem;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  

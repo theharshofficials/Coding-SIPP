@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Rental System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Car Rental System</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cars</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find the Best Rental Cars</h2>
+    <p>Book your ride in minutes. Affordable and reliable cars.</p>
+    <a href="#" class="btn">Explore Cars</a>
+  </section>
+
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search car by name..." onkeyup="filterCars()">
+  </section>
+
+  <section class="car-list" id="carList">
+    <h3>Featured Cars</h3>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1571607388263-0468cfd1db49?auto=format&fit=crop&w=400&q=80" alt="Honda City">
+      <h4>Honda City</h4>
+      <p>₹500/day</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="car">
+      <img src="https://images.barrons.com/im-292011/socials" alt="lamborghini urus">
+      <h4>lamborghini urus</h4>
+      <p>₹10000/day</p>
+      <button>Book Now</button>
+    </div>
+
+    <div class="car">
+      <!-- <img src="https://imgd.aeplcdn.com/1056x594/n/2lntjbb_1685567.jpg?q=80" alt="g wagon"> -->
+      <h4>g wagon</h4>
+      <p>₹700/day</p>
+      <button>Book Now</button>
+    </div>
+
+  </section>
+
+  <section class="booking-form">
+    <h3>Book a Car</h3>
+    <form>
+      <label for="car">Choose Car:</label>
+      <select id="car" name="car">
+        <option>Honda City</option>
+        <option>Maruti Swift</option>
+        <option>Mahindra XUV500</option>
+      </select>
+
+      <label for="date">Pickup Date:</label>
+      <input type="date" id="date" name="date">
+
+      <label for="days">Number of Days:</label>
+      <input type="number" id="days" name="days" min="1" value="1">
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Car Rental System. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function filterCars() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let cars = document.querySelectorAll('.car');
+
+      cars.forEach(function(car) {
+        let title = car.querySelector('h4').textContent.toLowerCase();
+        car.style.display = title.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
